@@ -111,7 +111,8 @@ class TicTacToeAI:
     def load_model(self):
         """Load model and training state if available."""
         if os.path.exists('tictactoe_model.pth'):
-            save_dict = torch.load('tictactoe_model.pth')
+            save_dict = torch.load('tictactoe_model.pth',
+                                  map_location=self.device)
             self.model.load_state_dict(save_dict['model_state'])
             self.optimizer.load_state_dict(save_dict['optimizer_state'])
-            self.epsilon = save_dict['epsilon'] 
+            self.epsilon = save_dict['epsilon']

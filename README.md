@@ -17,7 +17,7 @@ A simple command-line implementation of the classic Tic Tac Toe game in Python.
 
 2. Run the game using Python 3:
    ```
-   python tic_tac_toe.py
+   python tictactoe.py
    ```
 3. The game board is represented by a 3x3 grid with positions numbered 1-9
 4. Players take turns entering numbers 1-9 to place their mark (X or O)

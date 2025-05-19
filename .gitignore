@@ -1,0 +1,5 @@
+# Ignore the pythong cache folder
+__pycache__/
+
+# Ignore the neural network weights file (may check this in later but not now)
+tictactoe_model.pth
